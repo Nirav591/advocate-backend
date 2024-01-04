@@ -41,8 +41,6 @@ exports.clientList = async (req, res) => {
     let query =
       'INSERT INTO clients ( company_or_organization, client_name, client_email, client_mobile, emergency_mobile ,gender, category,country,state,city,client_address,description) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)';
     pool.query(query, queryParams, async (err, result) => {
-      console.log(result, 'result');
-
       if (err) {
         return handleDatabaseError(res, err);
       }
