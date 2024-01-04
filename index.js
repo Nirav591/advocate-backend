@@ -4,7 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 6310;
+const port = 6340;
 
 const authRoute = require('./routes/auth.route');
 const clientRoute = require('./routes/client.route');
